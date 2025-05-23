@@ -1,0 +1,34 @@
+{
+  "type": "record",
+  "name": "RfqEvent",
+  "namespace": "com.example",
+  "fields": [
+    { "name": "anchor_label", "type": "string" },
+    { "name": "rfq_anchor_time", "type": "string" },
+    { "name": "rfq_born_time", "type": "string" },
+    {
+      "name": "rfq_history_time_diff_seconds",
+      "type": ["null", "double"],
+      "default": null
+    },
+    { "name": "rfq_id", "type": "string" },
+    {
+      "name": "rfq_lifecycle",
+      "type": {
+        "type": "array",
+        "items": "string"
+      }
+    },
+    { "name": "rfq_price", "type": "double" },
+    { "name": "rfq_receive_time", "type": "string" },
+    { "name": "rfq_state", "type": "string" },
+    { "name": "rfq_ticker", "type": "string" },
+    { "name": "rn", "type": "int" },
+    { "name": "stacks_ask", "type": "double" },
+    { "name": "stacks_bid", "type": ["null", "double"], "default": null },
+    { "name": "stacks_cusip", "type": "string" },
+    { "name": "stacks_timestamp", "type": "string" },
+    { "name": "stacks_venue", "type": "string" },
+    { "name": "time_diff_seconds", "type": "string" }
+  ]
+}
